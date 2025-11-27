@@ -1,6 +1,7 @@
 # dependencies
 /node_modules
 /generated
+/dist
 
 # Keep environment variables out of version control
 .env
