@@ -1,10 +1,10 @@
 import type { UrlEntityInterface } from "../entities/UrlEntity.js";
-import FindSlugRepository from "../repositories/findSlugRepository.js";
+import type { IFindSlugRepository } from "../interfaces/IFindSlugRepository.js";
 
 export class FindSlugUseCase {
-    private findSlugRepository: FindSlugRepository;
+    private findSlugRepository: IFindSlugRepository;
 
-    constructor(findSlugRepository: FindSlugRepository) {
+    constructor(findSlugRepository: IFindSlugRepository) {
         this.findSlugRepository = findSlugRepository;
     }
     

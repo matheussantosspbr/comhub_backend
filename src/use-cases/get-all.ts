@@ -1,10 +1,10 @@
 import type { UrlEntityInterface } from "../entities/UrlEntity.js";
-import GetAllRepository from "../repositories/getAllRepository.js";
+import type { IGetAllRepository } from "../interfaces/IGetAllRepository.js";
 
 export class GetAllUseCase {
-    private getAllRepository: GetAllRepository;
+    private getAllRepository: IGetAllRepository;
 
-    constructor(getAllRepository: GetAllRepository) {
+    constructor(getAllRepository: IGetAllRepository) {
         this.getAllRepository = getAllRepository;
     }
     

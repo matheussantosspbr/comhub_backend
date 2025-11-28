@@ -1,5 +1,4 @@
 import { ShortenController } from "../controller/ShortenController.js";
-
 import { CreateUrlUseCase } from "../use-cases/create-url.js";
 import { FindSlugUseCase } from "../use-cases/find-slug.js";
 import { UpdateClickUseCase } from "../use-cases/update-click.js";
@@ -9,7 +8,7 @@ import CreateUrlRepository from "../repositories/createUrlRepository.js";
 import FindSlugRepository from "../repositories/findSlugRepository.js";
 import UpdateClickRepository from "../repositories/updateClickRepository.js";
 import GetAllRepository from "../repositories/getAllRepository.js";
-import DeleteUrlRepository from "../repositories/deleteUrl.Repository.js";
+import DeleteUrlRepository from "../repositories/deleteUrlRepository.js";
 
 export function makeShortenController() {
     const createUC = new CreateUrlUseCase(new CreateUrlRepository());

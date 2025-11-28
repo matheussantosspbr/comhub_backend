@@ -1,14 +1,10 @@
-import type { UrlEntityInterface } from "../entities/UrlEntity.js";
-import GetAllRepository from "../repositories/getAllRepository.js";
+import { describe, it, expect } from "vitest";
+import GetAllRepository from "../tests/repositories/getAllRepository";
 
-export class GetAllUseCase {
-    private getAllRepository: GetAllRepository;
-
-    constructor(getAllRepository: GetAllRepository) {
-        this.getAllRepository = getAllRepository;
-    }
-    
-    async execute(): Promise<UrlEntityInterface[] | null> {
-        return await this.getAllRepository.getAll();
-    }
-}
+describe("Get all", () => {
+    it("should return all slugs", () => {
+        const getAllRepository = new GetAllRepository();
+        const data = getAllRepository.getAll();
+        expect(data).toBeTypeOf("object");
+    });
+});

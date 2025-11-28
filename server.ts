@@ -9,7 +9,7 @@ app.use(cors());
 
 const shortenController = makeShortenController();
 
-app.post("/create", async (req, res) => {
+app.post("/links", async (req, res) => {
     const response = await shortenController.create(req.body.longUrl);
     res.status(response.status).json(response);
 });

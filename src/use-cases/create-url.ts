@@ -1,11 +1,11 @@
 import { UrlEntity, type UrlEntityInterface } from "../entities/UrlEntity.js";
 import { RandomCharacter } from "../services/GenerateCode.js";
-import createUrlRepository from "../repositories/createUrlRepository.js";
+import type { ICreateUrlRepository } from "../interfaces/ICreateUrlRepository.js";
 
 export class CreateUrlUseCase {
-    private createUrlRepository: createUrlRepository;
+    private createUrlRepository: ICreateUrlRepository;
 
-    constructor(createUrlRepository: createUrlRepository) {
+    constructor(createUrlRepository: ICreateUrlRepository) {
         this.createUrlRepository = createUrlRepository;
     }
     

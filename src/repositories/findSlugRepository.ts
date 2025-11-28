@@ -1,13 +1,10 @@
-import { prisma } from "@prisma/client"
+import { prisma } from "../lib/prisma";
 import type { UrlEntityInterface } from '../entities/UrlEntity.js';
+import type { IFindSlugRepository, FindSlugsProps } from "../interfaces/IFindSlugRepository.js";
 
-interface FindSlugsProps {
-    slug: string;
-}
-
-export default class FindSlugRepository {
+export default class FindSlugRepository implements IFindSlugRepository {
     async find({ slug }: FindSlugsProps): Promise<UrlEntityInterface | null> {
-        return prisma.url.findUnique({
+        return await prisma.url.findUnique({
             where: { slug },
         });
     }

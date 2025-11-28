@@ -1,9 +1,9 @@
-import DeleteUrlRepository from "../repositories/deleteUrl.Repository.js";
+import type { IDeleteUrlRepository } from "../interfaces/IDeleteUrlRepository.js";
 
 export class DeleteUrlUseCase {
-    private deleteUrlRepository: DeleteUrlRepository;
+    private deleteUrlRepository: IDeleteUrlRepository;
 
-    constructor(deleteUrlRepository: DeleteUrlRepository) {
+    constructor(deleteUrlRepository: IDeleteUrlRepository) {
         this.deleteUrlRepository = deleteUrlRepository;
     }
     

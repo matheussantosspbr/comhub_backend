@@ -1,9 +1,9 @@
-import UpdateClickRepository from "../repositories/updateClickRepository.js";
+import type { IUpdateClickRepository } from "../interfaces/IUpdateClickRepository.js";
 
 export class UpdateClickUseCase {
-    private updateClickRepository: UpdateClickRepository;
+    private updateClickRepository: IUpdateClickRepository;
 
-    constructor(updateClickRepository: UpdateClickRepository) {
+    constructor(updateClickRepository: IUpdateClickRepository) {
         this.updateClickRepository = updateClickRepository;
     }
     

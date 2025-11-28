@@ -1,14 +1,10 @@
-import { prisma } from "@prisma/client"
+import { prisma } from "../lib/prisma";
 import type { UrlEntityInterface } from '../entities/UrlEntity.js';
+import type { ICreateUrlRepository, CreateUrlProps } from "../interfaces/ICreateUrlRepository.js";
 
-interface CreateUrlProps {
-    slug: string;
-    longUrl: string;
-}
-
-export default class CreateUrlRepository {
+export default class CreateUrlRepository implements ICreateUrlRepository {
     async create({ slug, longUrl }: CreateUrlProps): Promise<UrlEntityInterface> {
-        return prisma.url.create({
+        return await prisma.url.create({
             data: { slug, longUrl },
         });
     }
