@@ -1,4 +1,4 @@
-import { prisma } from "../lib/prisma";
+import { prisma } from "../lib/prisma.js";
 import type { IUpdateClickRepository } from "../interfaces/IUpdateClickRepository.js";
 
 export default class UpdateClickRepository implements IUpdateClickRepository {

@@ -1,5 +1,5 @@
-import type { UrlEntityInterface } from './../../entities/UrlEntity';
-import type { ICreateUrlRepository, CreateUrlProps } from '../../interfaces/ICreateUrlRepository';
+import type { UrlEntityInterface } from './../../entities/UrlEntity.js';
+import type { ICreateUrlRepository, CreateUrlProps } from '../../interfaces/ICreateUrlRepository.js';
 
 export default class CreateUrlRepository implements ICreateUrlRepository {
     private repo: UrlEntityInterface[] = [];

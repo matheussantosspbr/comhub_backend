@@ -1,5 +1,5 @@
-import type { UrlEntityInterface } from './../../entities/UrlEntity';
-import type { IFindSlugRepository, FindSlugsProps } from '../../interfaces/IFindSlugRepository';
+import type { UrlEntityInterface } from './../../entities/UrlEntity.js';
+import type { IFindSlugRepository, FindSlugsProps } from '../../interfaces/IFindSlugRepository.js';
 
 export default class FindSlugRepository implements IFindSlugRepository {
     private repo: UrlEntityInterface[] = [{

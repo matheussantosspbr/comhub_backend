@@ -1,5 +1,5 @@
-import type { UrlEntityInterface } from '../../entities/UrlEntity';
-import type { IUpdateClickRepository } from '../../interfaces/IUpdateClickRepository';
+import type { UrlEntityInterface } from '../../entities/UrlEntity.js';
+import type { IUpdateClickRepository } from '../../interfaces/IUpdateClickRepository.js';
 
 export default class UpdateClickRepository implements IUpdateClickRepository {
     private repo: UrlEntityInterface[] = [{

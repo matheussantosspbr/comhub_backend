@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import UpdateClickRepository from "../tests/repositories/updateClickRepository";
+import UpdateClickRepository from "../tests/repositories/updateClickRepository.js";
 
 describe("Update click", () => {
     it("should update click", async () => {

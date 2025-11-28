@@ -1,4 +1,4 @@
-import { prisma } from "../lib/prisma";
+import { prisma } from "../lib/prisma.js";
 import type { UrlEntityInterface } from '../entities/UrlEntity.js';
 import type { IFindSlugRepository, FindSlugsProps } from "../interfaces/IFindSlugRepository.js";
 

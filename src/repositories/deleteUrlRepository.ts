@@ -1,4 +1,4 @@
-import { prisma } from "../lib/prisma";
+import { prisma } from "../lib/prisma.js";
 import type { IDeleteUrlRepository } from "../interfaces/IDeleteUrlRepository.js";
 
 export default class DeleteUrlRepository implements IDeleteUrlRepository {

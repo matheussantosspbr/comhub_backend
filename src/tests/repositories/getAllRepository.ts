@@ -1,5 +1,5 @@
-import type { UrlEntityInterface } from './../../entities/UrlEntity';
-import type { IGetAllRepository } from '../../interfaces/IGetAllRepository';
+import type { UrlEntityInterface } from './../../entities/UrlEntity.js';
+import type { IGetAllRepository } from '../../interfaces/IGetAllRepository.js';
 
 export default class GetAllRepository implements IGetAllRepository {
     private repo: UrlEntityInterface[] = [{

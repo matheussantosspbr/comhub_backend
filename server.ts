@@ -9,7 +9,7 @@ app.use(cors());
 
 const shortenController = makeShortenController();
 
-app.post("/links", async (req, res) => {
+app.post("/api/links", async (req, res) => {
     const response = await shortenController.create(req.body.longUrl);
     res.status(response.status).json(response);
 });
@@ -19,12 +19,12 @@ app.get("/:slug", async (req, res) => {
     res.status(response.status).json(response);
 });
 
-app.get("/links", async (req, res) => {
+app.get("/api/links", async (req, res) => {
     const response = await shortenController.getAll();
     res.status(response.status).json(response);
 });
 
-app.delete("/links/:slug", async (req, res) => {
+app.delete("/api/links/:slug", async (req, res) => {
     const response = await shortenController.delete(req.params.slug);
     res.status(response.status).json(response);
 });

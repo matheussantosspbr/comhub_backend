@@ -1,4 +1,4 @@
-import DeleteUrlRepository from "../tests/repositories/deleteUrlRepository"
+import DeleteUrlRepository from "../tests/repositories/deleteUrlRepository.js"
 import { describe, it, expect } from "vitest";
 
 describe("Delete URL", () => {

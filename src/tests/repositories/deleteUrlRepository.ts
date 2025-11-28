@@ -1,5 +1,5 @@
-import type { UrlEntityInterface } from '../../entities/UrlEntity';
-import type { IDeleteUrlRepository } from '../../interfaces/IDeleteUrlRepository';
+import type { UrlEntityInterface } from '../../entities/UrlEntity.js';
+import type { IDeleteUrlRepository } from '../../interfaces/IDeleteUrlRepository.js';
 
 export default class DeleteUrlRepository implements IDeleteUrlRepository {
     private repo: UrlEntityInterface[] = [{

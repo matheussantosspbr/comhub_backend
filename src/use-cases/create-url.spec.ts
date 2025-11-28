@@ -1,7 +1,7 @@
 import { expect, describe, it } from "vitest";
 import { UrlEntity } from "../entities/UrlEntity.js";
 import { RandomCharacter } from "../services/GenerateCode.js";
-import CreateUrlRepository from "../tests/repositories/createUrlRepository";
+import CreateUrlRepository from "../tests/repositories/createUrlRepository.js";
 
 describe("Create URL", () => {
     it("should create a short URL", async () => {
